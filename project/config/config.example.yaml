@@ -1,0 +1,19 @@
+# Example configuration - copy to config.yaml and fill in values
+
+system:
+  log_level: INFO
+
+risk:
+  max_position: 10000
+  max_long_position: 10000
+  max_short_position: -10000
+  max_drawdown: 0.05
+  kill_switch_threshold: 1000  # max loss in USD before halt
+
+execution:
+  primary_venue: NASDAQ
+  secondary_venue: NYSE
+
+monitoring:
+  prometheus_port: 9090
+  metrics_interval_sec: 1
